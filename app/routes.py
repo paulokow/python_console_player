@@ -18,9 +18,9 @@ def index():
 
 @app.route('/unzip')
 def unzip():
-    targetpath = "./tmp/game"
+    targetpath = "../tmp/game"
     ensure_dir(targetpath)
-    zippath = "./tmp/game.zip"
+    zippath = "../tmp/game.zip"
     request.urlretrieve('https://github.com/paulokow/python_console_player/archive/master.zip', zippath)
     with zipfile.ZipFile(zippath, "r") as zip_ref:
         zip_ref.extractall(targetpath)
