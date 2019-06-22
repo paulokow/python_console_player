@@ -14,10 +14,10 @@ def get_github_source():
     targetpath = "../tmp/game"
     ensure_dir(targetpath)
     zippath = "../tmp/game.zip"
-    githubuser = 'paulokow'
-    githubproject = 'consoledemo'
+    githubuser = 'kacper-kow'
+    githubproject = 'rpg'
     projectbranch = 'master'
-    mainfile = 'main.py'
+    mainfile = 'rpg.py'
     return get_github_source_with_params(githubproject, githubuser, mainfile, projectbranch, targetpath, zippath)
 
 
